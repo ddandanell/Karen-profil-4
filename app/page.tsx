@@ -39,12 +39,12 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 content-width side-padding py-32 md:py-40 text-center">
+        <div className="relative z-10 content-width side-padding py-20 md:py-32 lg:py-40 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8 md:space-y-12"
+            className="space-y-6 md:space-y-8 lg:space-y-12"
           >
             {/* Pre-Headline */}
             <p className="relative z-20 text-soft-gold font-sans text-base md:text-lg uppercase tracking-[2px] drop-shadow-[0_1px_3px_rgba(255,255,255,0.6)]">
@@ -212,13 +212,13 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-10 rounded-lg border border-soft-taupe hover:shadow-lg transition-shadow"
+            className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-5xl mb-6">🚀</div>
-            <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-4">
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">🚀</div>
+            <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Extreme Speed
             </h3>
-            <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
+            <p className="font-sans text-sm md:text-base lg:text-lg text-muted-charcoal leading-relaxed">
               What takes others 6 months, we deliver in 5-45 days. Fast-track luxury without compromise. Your space transforms while others are still getting quotes.
             </p>
           </motion.div>
@@ -228,13 +228,13 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white p-10 rounded-lg border border-soft-taupe hover:shadow-lg transition-shadow"
+            className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-5xl mb-6">💰</div>
-            <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-4">
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">💰</div>
+            <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Proven ROI
             </h3>
-            <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
+            <p className="font-sans text-sm md:text-base lg:text-lg text-muted-charcoal leading-relaxed">
               Average 35% increase in property value. Our renovations pay for themselves through higher rents, faster sales, and premium positioning. This isn't cost — it's investment.
             </p>
           </motion.div>
@@ -244,13 +244,13 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-white p-10 rounded-lg border border-soft-taupe hover:shadow-lg transition-shadow"
+            className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-5xl mb-6">✨</div>
-            <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-4">
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">✨</div>
+            <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Bespoke Magic
             </h3>
-            <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
+            <p className="font-sans text-sm md:text-base lg:text-lg text-muted-charcoal leading-relaxed">
               No cookie-cutter templates. Every sanctuary is custom-designed to reflect your personality or maximize market appeal. We create universes, not just rooms.
             </p>
           </motion.div>
@@ -299,15 +299,16 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4 md:mb-6 transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-2">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl text-deep-charcoal mb-3 text-left">
+              <h3 className="font-serif text-xl md:text-2xl text-deep-charcoal mb-3 text-left group-hover:text-soft-gold transition-colors duration-300">
                 {project.title}
               </h3>
               <p className="font-sans text-sm md:text-base text-muted-charcoal text-left leading-relaxed">
@@ -423,7 +424,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#F5F9F5] p-12 rounded-lg"
+            className="group bg-[#F5F9F5] p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
             <div className="text-4xl mb-6">💰</div>
             <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-6">
@@ -453,7 +454,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-warm-beige p-12 rounded-lg"
+            className="group bg-warm-beige p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
             <div className="text-4xl mb-6">✨</div>
             <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-6">

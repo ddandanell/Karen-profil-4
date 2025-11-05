@@ -23,9 +23,9 @@ export const Section: React.FC<SectionProps> = ({
   };
 
   const paddings = {
-    default: 'py-20 md:py-25 lg:py-30',
-    large: 'py-25 md:py-30 lg:py-38',
-    small: 'py-15 md:py-20',
+    default: 'py-12 md:py-20 lg:py-24 xl:py-30',
+    large: 'py-16 md:py-24 lg:py-32 xl:py-38',
+    small: 'py-8 md:py-15 lg:py-20',
   };
 
   return (

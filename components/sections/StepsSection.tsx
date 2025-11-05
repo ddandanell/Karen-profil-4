@@ -62,20 +62,20 @@ export const StepsSection: React.FC = () => {
           className="relative group"
         >
           {/* Card */}
-          <div className="pt-10 pb-10 px-8 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-0.5">
+          <div className="pt-8 md:pt-10 pb-8 md:pb-10 px-6 md:px-8 rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
             {/* Icon and Number */}
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gold-primary text-white shadow-gold flex items-center justify-center flex-shrink-0">
-                <Icon className="w-6 h-6" aria-hidden="true" />
+            <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold-primary text-white shadow-gold flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-xl">
+                <Icon className="w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
               </div>
-              <div className="px-3 py-1 rounded-full bg-gold-light/30 text-gold-primary text-xs font-semibold border border-gold-primary/20">
+              <div className="px-2 md:px-3 py-1 rounded-full bg-gold-light/30 text-gold-primary text-xs font-semibold border border-gold-primary/20">
                 {String(id).padStart(2, '0')}
               </div>
             </div>
 
-            <h3 className="heading-3 mb-3 text-balance">{title}</h3>
+            <h3 className="heading-3 mb-3 text-balance group-hover:text-gold-primary transition-colors duration-300">{title}</h3>
             <p className="body-text text-gray-600 mb-4">{blurb}</p>
-            <p className="text-sm italic text-gray-500">→ {foot}</p>
+            <p className="text-xs md:text-sm italic text-gray-500">→ {foot}</p>
           </div>
         </motion.div>
       ))}
