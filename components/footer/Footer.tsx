@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle, ArrowRight, Award, Shield, Sparkles } from 'lucide-react';
 import { Button } from '../ui/Button';
@@ -52,6 +53,23 @@ export const Footer: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
+              {/* Logo */}
+              <Link href="/" className="block mb-6 md:mb-8 group">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative w-32 h-20 md:w-40 md:h-24"
+                >
+                  <Image
+                    src="/images/logo.png"
+                    alt="Karen K Sanctuaries Logo"
+                    fill
+                    className="object-contain filter group-hover:brightness-110 transition-all duration-300"
+                    priority
+                  />
+                </motion.div>
+              </Link>
+              
               <h3 className="font-serif text-3xl md:text-4xl text-deep-charcoal mb-4 md:mb-6">
                 Karen K Sanctuaries
               </h3>
