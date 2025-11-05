@@ -1,0 +1,85 @@
+# Luxury Interior Design Website - Complete Style Guidelines
+
+## Design Philosophy
+- Quiet luxury aesthetic: understated sophistication over flashy elements
+- Generous whitespace is mandatory - it signals premium quality
+- Every element must have purpose - minimize visual noise
+- Timeless elegance over trendy effects
+
+## Typography Rules
+- Primary headings: Use elegant serif fonts (Playfair Display, Cormorant Garamond, or similar)
+  - Font weight: 300-500 (light to medium)
+  - Large sizes: 48-72px for hero headlines
+  - Letter spacing: slightly increased for refinement
+  
+- Body text: Clean sans-serif (Inter, Montserrat, or similar)
+  - Font weight: 300-400
+  - Font size: 16-18px
+  - Line height: 1.6-1.8 (mandatory for readability)
+  
+- Never use more than 2 font families per page
+- Apply generous letter-spacing (0.5-1px) on buttons and labels
+
+## Color Palette
+- Base colors (70%): Off-white (#FAFAF8), warm beige (#F5F1ED), cream tones
+- Secondary colors (20%): Soft taupe (#D5C8BF), warm gray (#9B8E82)
+- Accent colors (10%): Deep charcoal (#2D2D2D), soft gold (#C9A876)
+- Avoid bright, saturated colors entirely
+- Use natural, earthy, muted tones only
+
+## Spacing & Layout (CRITICAL)
+- Section padding: 80-120px top and bottom (never less)
+- Content blocks: Minimum 60px spacing between major elements
+- Text line height: 1.6-1.8 (mandatory)
+- Paragraph spacing: 24-32px
+- Maximum content width: 1200-1400px
+- Side margins: Minimum 80px on desktop, 24px on mobile
+- Whitespace is luxury - use it generously
+
+## Navigation Design Rules
+### Desktop Navigation
+- Clean horizontal layout with generous spacing
+- Menu items: 5-7 maximum (keep it simple)
+- Font: Sans-serif, 14-16px, letter-spacing 1px
+- Spacing between items: 40-50px minimum
+- Hover effects: subtle underline or color shift only
+- Sticky navigation with subtle shadow on scroll
+- Logo: Top left, linked to homepage
+- Background: Off-white or transparent with subtle backdrop blur
+
+### Mobile Navigation (CRITICAL)
+- Hamburger menu: 3 clean lines, 24-32px size
+- Menu opens as full-screen overlay or smooth slide-in from right
+- Overlay background: Semi-transparent dark (#2D2D2D with 95% opacity)
+- Menu items: Large text (18-20px), generous spacing (32px between items)
+- Close button: X icon, top right, 32px size
+- Touch targets: Minimum 44px height for all clickable items
+
+## Footer Design Rules
+### Footer Structure (3-4 columns on desktop, stacked on mobile)
+- Background: #F5F1ED or #FAFAF8 (soft neutral)
+- Padding: 80-100px top, 60px bottom
+- Column spacing: 60-80px on desktop
+- Text color: #4A4A4A (muted charcoal)
+- Mobile: Stack vertically, 40px spacing
+
+## Button & UI Elements
+- Border radius: 8-12px (subtle rounded corners, NEVER pill-shaped)
+- Button height: 48-56px
+- Horizontal padding: 32-40px
+- Font size: 14-16px with 0.5-1px letter spacing
+- Hover effects: subtle color shift or soft shadow only
+
+## Mobile-First Responsive Rules
+- Mobile breakpoint: 768px and below
+- Touch targets: 44px minimum for all interactive elements
+- Navigation: Full-screen mobile menu only
+- Test on real devices, not just browser responsive mode
+
+## Code Style
+- Use Tailwind CSS for all styling
+- Use React components (functional components with hooks)
+- Use Next.js App Router structure
+- Keep components clean and well-organized
+- Semantic HTML (nav, header, footer, main, section)
+- Accessibility: Proper ARIA labels, alt texts, keyboard navigation
