@@ -67,7 +67,7 @@ export default function HomePage() {
                 onClick={scrollToContact}
                 variant="primary"
                 size="lg"
-                className="bg-soft-gold text-deep-charcoal hover:bg-gold-luminous hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-soft-gold text-white hover:bg-gold-luminous hover:text-deep-charcoal hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Book Your Free Consultation
               </Button>
