@@ -165,10 +165,29 @@ export default function HomePage() {
         </div>
 
         {/* Bridge Statement */}
-        <div className="max-w-3xl mx-auto text-center py-16 md:py-24 bg-off-white rounded-lg">
-          <p className="font-sans text-lg md:text-xl font-medium text-gold-dark tracking-wide leading-relaxed">
-            What if you could have both — a space that pays you back financially AND feeds your soul emotionally?
-          </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-off-white rounded-lg p-8 md:p-12 lg:p-16 shadow-sm">
+            {/* Image - Centered on top */}
+            <div className="relative h-48 md:h-56 lg:h-64 w-full mb-8 md:mb-12 rounded-lg overflow-hidden">
+              <Image
+                src="/images/2.jpg"
+                alt="Artistic masterpiece - Luxury interior design inspiration"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            
+            {/* Text Content - Centered below image */}
+            <div className="text-center">
+              <p className="font-serif text-2xl md:text-3xl lg:text-4xl font-light text-deep-charcoal leading-tight mb-4 md:mb-6">
+                What if you could have both
+              </p>
+              <p className="font-sans text-base md:text-lg lg:text-xl font-light text-muted-charcoal leading-relaxed">
+                — a space that pays you back financially AND feeds your soul emotionally?
+              </p>
+            </div>
+          </div>
         </div>
       </Section>
 
