@@ -794,32 +794,14 @@ export default function HomePage() {
                       />
                     </div>
                     
-                    {/* Client's Experience - Under Image */}
+                    {/* Testimonial - Under Image */}
                     <div className="bg-warm-beige border-l-4 border-soft-gold p-6 md:p-8 rounded-lg">
-                      {project.clientExperience ? (
-                        <>
-                          <p className="font-sans text-base md:text-lg text-deep-charcoal leading-relaxed mb-4">
-                            {project.clientExperience}
-                          </p>
-                          <div className="pt-4 border-t border-soft-gold/30">
-                            <p className="font-sans text-base md:text-lg text-deep-charcoal leading-relaxed italic mb-2">
-                              "{project.testimonial}"
-                            </p>
-                            <p className="font-sans text-sm md:text-base text-muted-charcoal">
-                              – {project.author}
-                            </p>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <p className="font-sans text-base md:text-lg text-deep-charcoal leading-relaxed italic mb-2">
-                            "{project.testimonial}"
-                          </p>
-                          <p className="font-sans text-sm md:text-base text-muted-charcoal">
-                            – {project.author}
-                          </p>
-                        </>
-                      )}
+                      <p className="font-sans text-base md:text-lg text-deep-charcoal leading-relaxed italic mb-2">
+                        "{project.testimonial}"
+                      </p>
+                      <p className="font-sans text-sm md:text-base text-muted-charcoal">
+                        – {project.author}
+                      </p>
                     </div>
                   </div>
                 )}
