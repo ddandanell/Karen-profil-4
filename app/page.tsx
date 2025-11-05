@@ -787,10 +787,6 @@ export default function HomePage() {
                     
                     {/* Client's Experience - Under Image */}
                     <div className="bg-warm-beige border-l-4 border-soft-gold p-6 md:p-8 rounded-lg">
-                      <h4 className="font-serif text-lg md:text-xl text-deep-charcoal mb-4 flex items-center gap-2">
-                        <span className="text-soft-gold">💬</span>
-                        Experience
-                      </h4>
                       {project.clientExperience ? (
                         <>
                           <p className="font-sans text-base md:text-lg text-deep-charcoal leading-relaxed mb-4">

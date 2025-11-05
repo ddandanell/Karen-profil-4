@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -66,14 +67,30 @@ export const Navigation: React.FC = () => {
               href="/"
               onClick={() => handleNavClick('#hero')}
               className={cn(
-                'text-2xl md:text-3xl font-serif transition-colors',
+                'flex items-center gap-3 transition-colors group',
                 isScrolled
                   ? 'text-gray-900 hover:text-soft-gold'
                   : 'text-white hover:text-soft-gold'
               )}
               aria-label="Karen K Sanctuaries Home"
             >
-              Karen K Sanctuaries
+              <div className="relative w-10 h-8 md:w-12 md:h-10 flex-shrink-0">
+                <Image
+                  src="/images/logo.png"
+                  alt="Karen K Sanctuaries Logo"
+                  fill
+                  className="object-contain transition-all duration-300"
+                  style={{
+                    filter: isScrolled 
+                      ? 'none' 
+                      : 'brightness(0) invert(1)',
+                  }}
+                  priority
+                />
+              </div>
+              <span className="text-2xl md:text-3xl font-serif">
+                Karen K Sanctuaries
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
