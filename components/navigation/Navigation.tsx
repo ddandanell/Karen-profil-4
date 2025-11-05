@@ -74,7 +74,7 @@ export const Navigation: React.FC = () => {
               )}
               aria-label="Karen K Sanctuaries Home"
             >
-              <div className="relative w-20 h-14 md:w-24 md:h-16 flex-shrink-0">
+              <div className="relative w-16 h-11 md:w-20 md:h-14 flex-shrink-0">
                 <Image
                   src="/images/logo.png"
                   alt="Karen K Sanctuaries Logo"
@@ -88,7 +88,7 @@ export const Navigation: React.FC = () => {
                   priority
                 />
               </div>
-              <span className="text-2xl md:text-3xl font-serif">
+              <span className="text-xl md:text-2xl font-serif">
                 Karen K Sanctuaries
               </span>
             </Link>
