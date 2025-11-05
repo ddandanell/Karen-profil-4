@@ -46,7 +46,7 @@ export const PremiumTrustBadges: React.FC<PremiumTrustBadgesProps> = ({ onBookCl
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: '-50px' }}
-        className="text-center mb-16 md:mb-20"
+        className="text-center mb-12 md:mb-16"
       >
         <div className="max-w-md mx-auto">
           <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 rounded-full bg-soft-gold flex items-center justify-center transition-transform duration-300 hover:scale-110 shadow-lg">
@@ -62,14 +62,14 @@ export const PremiumTrustBadges: React.FC<PremiumTrustBadgesProps> = ({ onBookCl
             onClick={onBookClick}
             variant="primary"
             size="lg"
-            className="w-full md:w-auto"
+            className="w-full md:w-auto mb-12 md:mb-16"
           >
             Book Discovery Call
           </Button>
         </div>
       </motion.div>
 
-      {/* Trust Badges - Below button */}
+      {/* Trust Badges - Directly below button */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
         {premiumBadges.map((badge, index) => {
           const Icon = badge.icon;

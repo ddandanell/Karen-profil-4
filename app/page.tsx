@@ -1324,7 +1324,7 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-sm md:text-base text-muted-charcoal">
               <span>📍 Dubai Design District, Building 3, UAE</span>
               <span>📱 WhatsApp: +971 502269068</span>
-              <span>⭐ 100+ Luxury Transformations | 5-Star Rated</span>
+              <span>⭐ 100+ Luxury Transformations</span>
             </div>
           </div>
         </div>
