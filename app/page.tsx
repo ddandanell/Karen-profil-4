@@ -214,7 +214,7 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">🚀</div>
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110 text-center">🚀</div>
             <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Extreme Speed
             </h3>
@@ -230,7 +230,7 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">💰</div>
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110 text-center">💰</div>
             <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Proven ROI
             </h3>
@@ -246,7 +246,7 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="group bg-white p-6 md:p-8 lg:p-10 rounded-lg border border-soft-taupe hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
           >
-            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110">✨</div>
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110 text-center">✨</div>
             <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-semibold text-deep-charcoal mb-3 md:mb-4 group-hover:text-soft-gold transition-colors duration-300">
               Bespoke Magic
             </h3>
