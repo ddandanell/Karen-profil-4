@@ -92,7 +92,7 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-                <Button href="/contact" variant="outline">
+                <Button href="/contact" variant="secondary">
                   Learn More
                 </Button>
               </div>

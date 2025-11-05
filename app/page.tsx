@@ -165,27 +165,31 @@ export default function HomePage() {
         </div>
 
         {/* Bridge Statement */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-off-white rounded-lg p-8 md:p-12 lg:p-16 shadow-sm">
-            {/* Image - Centered on top */}
-            <div className="relative h-48 md:h-56 lg:h-64 w-full mb-8 md:mb-12 rounded-lg overflow-hidden">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-white rounded-2xl overflow-hidden shadow-xl">
+            {/* Image - Left side with elegant frame effect */}
+            <div className="relative h-64 md:h-80 lg:h-full min-h-[400px] order-1 lg:order-1 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-warm-beige/20 to-transparent z-10" />
               <Image
-                src="/images/2.jpg"
-                alt="Artistic masterpiece - Luxury interior design inspiration"
+                src="/images/image.png"
+                alt="Luxury interior design - Sophisticated living space"
                 fill
-                className="object-contain"
+                className="object-cover"
                 priority
               />
             </div>
             
-            {/* Text Content - Centered below image */}
-            <div className="text-center">
-              <p className="font-serif text-2xl md:text-3xl lg:text-4xl font-light text-deep-charcoal leading-tight mb-4 md:mb-6">
-                What if you could have both
-              </p>
-              <p className="font-sans text-base md:text-lg lg:text-xl font-light text-muted-charcoal leading-relaxed">
-                — a space that pays you back financially AND feeds your soul emotionally?
-              </p>
+            {/* Text Content - Right side with elegant padding */}
+            <div className="bg-gradient-to-br from-off-white to-warm-beige p-8 md:p-12 lg:p-16 flex flex-col justify-center order-2 lg:order-2">
+              <div className="space-y-6 md:space-y-8">
+                <p className="font-serif text-3xl md:text-4xl lg:text-5xl font-light text-deep-charcoal leading-[1.1]">
+                  What if you could have both
+                </p>
+                <div className="w-16 h-0.5 bg-soft-gold" />
+                <p className="font-sans text-lg md:text-xl lg:text-2xl font-light text-muted-charcoal leading-relaxed">
+                  — a space that pays you back <span className="text-deep-charcoal font-medium">financially</span> AND feeds your soul <span className="text-deep-charcoal font-medium">emotionally</span>?
+                </p>
+              </div>
             </div>
           </div>
         </div>

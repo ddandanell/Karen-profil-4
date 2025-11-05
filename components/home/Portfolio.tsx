@@ -64,7 +64,7 @@ export const Portfolio: React.FC = () => {
       </div>
 
       <div className="text-center">
-        <Button href="/portfolio" variant="outline">
+        <Button href="/portfolio" variant="secondary">
           View All Projects
         </Button>
       </div>

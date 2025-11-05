@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
           <Button href="/portfolio" variant="primary">
             View Our Work
           </Button>
-          <Button href="/contact" variant="outline">
+          <Button href="/contact" variant="secondary">
             Get Started
           </Button>
         </div>
