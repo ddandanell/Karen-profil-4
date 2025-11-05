@@ -71,17 +71,17 @@ export default function HomePage() {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden w-full max-w-full">
       {/* HERO SECTION */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden w-full max-w-full">
         {/* Background Video with Overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 w-full max-w-full overflow-hidden">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover max-w-full"
           >
             <source src="/videos/hero-video.mp4" type="video/mp4" />
           </video>
@@ -306,7 +306,7 @@ export default function HomePage() {
           </motion.div>
         </div>
       </Section>
-
+              n og lav 100 ting du ville rette for at movil s
       {/* SECTION 3: VISUAL PROOF */}
       <Section id="portfolio" background="warm-beige" padding="large">
         <div className="text-center mb-16 md:mb-24">
@@ -1428,7 +1428,6 @@ export default function HomePage() {
           <div className="pt-8 border-t border-soft-taupe">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-sm md:text-base text-muted-charcoal">
               <span>📍 Dubai Design District, Building 3, UAE</span>
-              <span>📱 WhatsApp: +971 502269068</span>
               <span>⭐ 100+ Luxury Transformations</span>
             </div>
           </div>
@@ -1560,6 +1559,6 @@ export default function HomePage() {
           </div>
         </motion.div>
       </Section>
-    </>
+    </div>
   );
 }

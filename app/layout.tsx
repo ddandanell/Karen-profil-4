@@ -5,7 +5,6 @@ import { Navigation } from '@/components/navigation/Navigation';
 import { Footer } from '@/components/footer/Footer';
 import { MobileStickyCTA } from '@/components/ui/MobileStickyCTA';
 import { CookieBanner } from '@/components/ui/CookieBanner';
-import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,16 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased bg-off-white">
+    <html lang="en" className={`${inter.variable} ${playfair.variable} overflow-x-hidden`}>
+      <body className="font-sans antialiased bg-off-white overflow-x-hidden max-w-full">
         <Navigation />
-        <main className="min-h-screen pb-20 lg:pb-0">
+        <main className="min-h-screen pb-20 lg:pb-0 overflow-x-hidden w-full max-w-full">
           {children}
         </main>
         <Footer />
         <MobileStickyCTA />
         <CookieBanner />
-        <WhatsAppButton />
       </body>
     </html>
   );
