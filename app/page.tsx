@@ -53,7 +53,7 @@ export default function HomePage() {
 
             {/* Main Headline */}
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-normal max-w-5xl mx-auto">
-              Wake Up In Your Dream Sanctuary — And Watch Your Property Value Soar
+              Wake Up In Your Dream Sanctuary And Watch Your Property Value Soar
             </h1>
 
             {/* Sub-Headline */}
@@ -109,7 +109,7 @@ export default function HomePage() {
       {/* SECTION 1: THE PROBLEM */}
       <Section id="problem" background="warm-beige" padding="large">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-deep-charcoal mb-6 md:mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-deep-charcoal mb-6 md:mb-8 leading-relaxed">
             Are You Trapped Between Bland Spaces and Expensive, Endless Renovations?
           </h2>
         </div>
@@ -342,11 +342,14 @@ export default function HomePage() {
             <div className="flex items-center gap-3">
               <Clock className="w-6 h-6 md:w-8 md:h-8 text-gold-primary" />
               <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-deep-charcoal">
-                The Express Face-Lift <span className="text-gray-500 text-base md:text-lg font-normal">(5–15 Days)</span>
+                The Express Face-Lift
               </h3>
             </div>
             <p className="body-text text-gray-700 max-w-3xl">
               For properties that need instant ROI and zero downtime. We refresh flooring, lighting, and finishes to create a dramatic before-and-after that photographs like new construction. Ideal for landlords, flippers, or short-term rental owners who need beauty <em>yesterday.</em>
+            </p>
+            <p className="font-sans text-lg md:text-xl lg:text-2xl text-deep-charcoal font-semibold mt-4">
+              (5–15 Days)
             </p>
             <ul className="text-sm text-gray-600 list-disc pl-6 space-y-1">
               <li>Average turnaround: 10 days</li>
@@ -368,11 +371,14 @@ export default function HomePage() {
             <div className="flex items-center gap-3">
               <Home className="w-6 h-6 md:w-8 md:h-8 text-gold-primary" />
               <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-deep-charcoal">
-                The Invasive Face-Lift <span className="text-gray-500 text-base md:text-lg font-normal">(3–4 Weeks)</span>
+                The Invasive Face-Lift
               </h3>
             </div>
             <p className="body-text text-gray-700 max-w-3xl">
               For owners seeking significant value uplift and upgraded functionality. We reimagine kitchens, bathrooms, and layouts while retaining your property's bones—haute-couture renovation that's precision-crafted and time-efficient.
+            </p>
+            <p className="font-sans text-lg md:text-xl lg:text-2xl text-deep-charcoal font-semibold mt-4">
+              (3–4 Weeks)
             </p>
             <ul className="text-sm text-gray-600 list-disc pl-6 space-y-1">
               <li>Average turnaround: 25 days</li>
@@ -394,11 +400,14 @@ export default function HomePage() {
             <div className="flex items-center gap-3">
               <Crown className="w-6 h-6 md:w-8 md:h-8 text-gold-primary" />
               <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-deep-charcoal">
-                The Full New-Lift (Turnkey Sanctuary) <span className="text-gray-500 text-base md:text-lg font-normal">(1–2 Months)</span>
+                The Full New-Lift (Turnkey Sanctuary)
               </h3>
             </div>
             <p className="body-text text-gray-700 max-w-3xl">
               For visionaries creating an entirely new lifestyle. We design and execute every element—structure, finishes, furniture, art, and ambiance—until your property becomes a living sanctuary worthy of awards.
+            </p>
+            <p className="font-sans text-lg md:text-xl lg:text-2xl text-deep-charcoal font-semibold mt-4">
+              (1–2 Months)
             </p>
             <ul className="text-sm text-gray-600 list-disc pl-6 space-y-1">
               <li>Average turnaround: 45–60 days</li>

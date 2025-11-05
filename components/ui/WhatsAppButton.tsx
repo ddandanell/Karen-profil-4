@@ -156,15 +156,15 @@ export const WhatsAppButton: React.FC = () => {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="fixed bottom-24 right-6 z-50 w-80 md:w-96 bg-white rounded-2xl shadow-2xl border border-soft-taupe overflow-hidden"
             >
-              {/* Header with gold gradient */}
-              <div className="bg-gradient-to-r from-soft-gold to-gold-dark p-5 flex items-center justify-between">
+              {/* Header with white background */}
+              <div className="bg-white border-b border-soft-taupe/30 p-5 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <MessageCircle className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-soft-gold/10 rounded-full flex items-center justify-center border border-soft-gold/20">
+                    <MessageCircle className="w-6 h-6 text-soft-gold" />
                   </div>
                   <div>
-                    <h3 className="font-sans text-white font-bold text-base">Chat with Us</h3>
-                    <p className="font-sans text-white/90 text-xs">We'll respond within minutes!</p>
+                    <h3 className="font-sans text-deep-charcoal font-bold text-base">Chat with Us</h3>
+                    <p className="font-sans text-muted-charcoal text-xs">We'll respond within minutes!</p>
                   </div>
                 </div>
                 <button
@@ -172,7 +172,7 @@ export const WhatsAppButton: React.FC = () => {
                     setIsOpen(false);
                     setShowPrompt(false);
                   }}
-                  className="text-white hover:text-white/80 transition-colors"
+                  className="text-deep-charcoal hover:text-muted-charcoal transition-colors"
                   aria-label="Close options"
                 >
                   <X className="w-5 h-5" />
