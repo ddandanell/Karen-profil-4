@@ -424,7 +424,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="group bg-[#F5F9F5] p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+            className="group bg-white p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-soft-taupe/30"
           >
             <div className="text-4xl mb-6">💰</div>
             <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-6">
@@ -454,7 +454,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="group bg-warm-beige p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+            className="group bg-white p-8 md:p-10 lg:p-12 rounded-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-soft-taupe/30"
           >
             <div className="text-4xl mb-6">✨</div>
             <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal mb-6">
