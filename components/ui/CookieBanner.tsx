@@ -26,9 +26,26 @@ export const CookieBanner: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 max-w-xs">
+    <div className="fixed bottom-6 left-6 z-50 max-w-xs">
       <div className="bg-white backdrop-blur-sm border border-soft-taupe rounded-lg shadow-lg p-4">
-        <div className="flex items-start justify-between gap-3 mb-3">
+        {/* Buttons on top */}
+        <div className="flex gap-2 mb-3">
+          <button
+            onClick={handleDecline}
+            className="flex-1 px-3 py-1.5 text-xs font-sans tracking-wide text-muted-charcoal hover:text-deep-charcoal transition-colors"
+          >
+            Decline
+          </button>
+          <button
+            onClick={handleAccept}
+            className="flex-1 px-3 py-1.5 text-xs font-sans tracking-wide bg-soft-gold text-white rounded hover:bg-gold-dark transition-colors"
+          >
+            Accept
+          </button>
+        </div>
+        
+        {/* Text below */}
+        <div className="flex items-start justify-between gap-3">
           <p className="font-sans text-xs text-muted-charcoal leading-relaxed">
             We use cookies to enhance your experience.{' '}
             <a href="/cookies" className="text-soft-gold hover:text-gold-dark underline">
@@ -41,20 +58,6 @@ export const CookieBanner: React.FC = () => {
             aria-label="Close cookie banner"
           >
             <X className="w-3.5 h-3.5" />
-          </button>
-        </div>
-        <div className="flex gap-2">
-          <button
-            onClick={handleDecline}
-            className="flex-1 px-3 py-1.5 text-xs font-sans tracking-wide text-muted-charcoal hover:text-deep-charcoal transition-colors"
-          >
-            Decline
-          </button>
-          <button
-            onClick={handleAccept}
-            className="flex-1 px-3 py-1.5 text-xs font-sans tracking-wide bg-soft-gold text-white rounded hover:bg-gold-dark transition-colors"
-          >
-            Accept
           </button>
         </div>
       </div>
