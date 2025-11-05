@@ -67,36 +67,66 @@ export const WhatsAppButton: React.FC = () => {
         )}
       </motion.button>
 
-      {/* Auto-prompt notification */}
+      {/* Auto-prompt notification - Chat Bubble Style */}
       <AnimatePresence>
         {showPrompt && !isOpen && (
           <motion.div
-            initial={{ opacity: 0, x: 20, scale: 0.9 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 20, scale: 0.9 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0, y: 10, scale: 0.8 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.8 }}
+            transition={{ 
+              duration: 0.4,
+              type: 'spring',
+              stiffness: 300,
+              damping: 25
+            }}
             className="fixed bottom-28 right-6 z-50 max-w-xs"
             onClick={() => setIsOpen(true)}
           >
-            <div className="bg-gradient-to-br from-soft-gold to-gold-dark rounded-xl shadow-2xl p-4 border border-gold-light/30 cursor-pointer hover:scale-105 transition-transform duration-200">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Sparkles className="w-5 h-5 text-white" />
+            {/* Chat Bubble with Tail */}
+            <div className="relative bg-white rounded-2xl shadow-2xl p-4 cursor-pointer hover:shadow-3xl hover:scale-[1.02] transition-all duration-300 border border-gray-100">
+              {/* Tail pointing to WhatsApp button */}
+              <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white transform rotate-45 border-r border-b border-gray-100" />
+              
+              <div className="flex items-start gap-3 relative z-10">
+                {/* Avatar/Icon */}
+                <div className="w-10 h-10 bg-soft-gold/10 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-soft-gold/20">
+                  <Sparkles className="w-5 h-5 text-soft-gold" />
                 </div>
-                <div className="flex-1">
-                  <p className="font-sans text-sm font-semibold text-white mb-1">Karen K Sanctuaries</p>
-                  <p className="font-sans text-xs text-white/95 leading-relaxed">{currentPrompt}</p>
+                
+                {/* Message Content */}
+                <div className="flex-1 min-w-0">
+                  <p className="font-sans text-sm font-semibold text-deep-charcoal mb-1">Karen K Sanctuaries</p>
+                  <p className="font-sans text-sm text-deep-charcoal leading-relaxed">{currentPrompt}</p>
+                  <p className="font-sans text-xs text-muted-charcoal mt-1">Just now</p>
                 </div>
+                
+                {/* Close Button */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     setShowPrompt(false);
                   }}
-                  className="text-white/80 hover:text-white transition-colors flex-shrink-0"
+                  className="text-muted-charcoal hover:text-deep-charcoal transition-colors flex-shrink-0 hover:bg-warm-beige rounded-full p-1"
+                  aria-label="Close message"
                 >
                   <X className="w-4 h-4" />
                 </button>
               </div>
+              
+              {/* Subtle pulse animation */}
+              <motion.div
+                animate={{
+                  scale: [1, 1.05, 1],
+                  opacity: [0.5, 0.8, 0.5],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+                className="absolute inset-0 bg-soft-gold/5 rounded-2xl -z-0"
+              />
             </div>
           </motion.div>
         )}

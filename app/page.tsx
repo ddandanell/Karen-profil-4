@@ -576,14 +576,14 @@ export default function HomePage() {
         </div>
 
         {/* Timeline Projects */}
-        <div className="max-w-5xl mx-auto space-y-20 md:space-y-24">
+        <div className="max-w-5xl mx-auto space-y-24 md:space-y-32">
           {[
             {
               month: 'January 2025',
               project: 'Palm Jumeirah Penthouse for The Azar Family',
               duration: '28 days',
-              karensPerspective: 'This penthouse had breathtaking views but felt cold and sterile. The challenge was creating warmth without compromising the light-filled, airy feeling. I envisioned soft gold accents flowing through the space, sculpted marble that felt organic, and handmade lighting that would create intimate moments at sunset.',
-              whatWasDone: 'A full-scale transformation of a 4-bedroom penthouse overlooking the Gulf. Soft gold accents, sculpted marble kitchen island, and handmade lighting fixtures. Designed for light, silence, and serenity.',
+              karensPerspective: 'Creating warmth without compromising the light-filled, airy feeling. Soft gold accents, sculpted marble, and handmade lighting for intimate moments.',
+              whatWasDone: '4-bedroom penthouse transformation with soft gold accents, sculpted marble kitchen island, and handmade lighting fixtures.',
               testimonial: 'Karen\'s team turned a sterile apartment into a home we love waking up in. Every dirham was worth it.',
               clientExperience: 'Every morning, light glows through handmade fixtures. Every evening, the space breathes. The marble island became our home\'s pulse—friends ask who designed this sanctuary.',
               author: 'Lina Azar',
@@ -593,8 +593,8 @@ export default function HomePage() {
               month: 'February 2025',
               project: 'Al Barari Villa Restyle for Mr & Mrs Al-Fahim',
               duration: '21 days',
-              karensPerspective: 'Al Barari\'s architecture is stunning but can feel rigid. The Al-Fahim family needed their ground floor to breathe—to feel like luxury and nature in harmony. I saw Venetian plaster bringing warmth, natural onyx creating depth, and bamboo panels that would make the space feel alive and connected to the gardens outside.',
-              whatWasDone: 'Ground-floor redesign integrating nature and luxury. Venetian plaster, natural onyx, and custom bamboo panels softened the architecture while maintaining Al Barari\'s eco-soul. Family moved in mid-month.',
+              karensPerspective: 'Blending luxury with nature—Venetian plaster for warmth, natural onyx for depth, bamboo panels connecting to the gardens.',
+              whatWasDone: 'Ground-floor redesign with Venetian plaster, natural onyx, and custom bamboo panels maintaining Al Barari\'s eco-soul.',
               testimonial: 'They promised beauty in three weeks – and delivered something beyond it.',
               clientExperience: 'Venetian plaster warms. Bamboo panels dissolve boundaries. Three weeks delivered a space where nature and luxury breathe as one.',
               author: 'Omar Al-Fahim',
@@ -604,8 +604,8 @@ export default function HomePage() {
               month: 'March 2025',
               project: 'City Walk Apartment for Sara Ben-Khalid',
               duration: '17 days',
-              karensPerspective: 'Sara wanted downtown energy with minimalist sophistication. The space needed to function as a smart home while looking effortlessly chic. I focused on creating hidden storage that would eliminate clutter, acoustic treatments that would make it feel like a private sanctuary in the city, and lighting that would adapt to her mood.',
-              whatWasDone: 'Smart-home makeover including voice-activated lighting, acoustic ceilings, and hidden storage walls. A blend of minimalist chic and downtown attitude.',
+              karensPerspective: 'Downtown energy with minimalist sophistication—smart home functionality meets effortless chic.',
+              whatWasDone: 'Smart-home makeover with voice-activated lighting, acoustic ceilings, and hidden storage walls.',
               testimonial: 'It looks like a Soho loft in Dubai – I rented it 48 hours after the shoot.',
               clientExperience: 'Hidden storage eliminates clutter. Acoustic treatments create silence in the city. Listed it 48 hours after completion—multiple offers arrived immediately.',
               author: 'Sara Ben-Khalid',
@@ -615,8 +615,8 @@ export default function HomePage() {
               month: 'April 2025',
               project: 'Damac Hills Townhouse for The Raza Family',
               duration: '24 days',
-              karensPerspective: 'The Raza family needed a home that felt both sophisticated and child-friendly—a space where kids could play freely while adults could relax in elegance. The vision was to create flow by removing barriers, add a library wall that would inspire learning, and design a kitchen that would be the heart of the home.',
-              whatWasDone: 'Family-oriented redesign: knocked one wall, added custom walnut joinery, built a double-height library wall, and created a kid-safe open kitchen.',
+              karensPerspective: 'Sophisticated yet child-friendly—flow, inspiration, and a kitchen that becomes the heart of the home.',
+              whatWasDone: 'Family redesign: removed wall, added custom walnut joinery, built double-height library wall, and created kid-safe open kitchen.',
               testimonial: 'Delivered in under a month – and our children won\'t stop showing friends the reading loft.',
               clientExperience: 'Removed one wall. Gained flow. The library wall climbs two stories—our children read more now. Magazine-worthy, completely livable.',
               author: 'Mina Raza',
@@ -626,8 +626,8 @@ export default function HomePage() {
               month: 'May 2025',
               project: 'Bluewaters Luxury Apartment for Anders Design Group',
               duration: '19 days',
-              karensPerspective: 'This wasn\'t just a space—it was a marketing tool. Every element had to photograph beautifully and create an emotional connection with potential clients. I envisioned layered lighting that would create different moods, a curved onyx table that would be a conversation piece, and automated systems that would showcase modern luxury living.',
-              whatWasDone: 'Corporate showcase suite built for client demos. Layered lighting, curved onyx table, and automated curtains. Every angle Instagram-ready for marketing videos.',
+              karensPerspective: 'A marketing tool—every element designed to photograph beautifully and create emotional connections.',
+              whatWasDone: 'Corporate showcase suite with layered lighting, curved onyx table, and automated curtains. Every angle Instagram-ready.',
               testimonial: 'This suite sells our brand for us – people book before we even speak.',
               clientExperience: 'Layered lighting shifts moods. The curved onyx table starts conversations. Video tours get thousands of views. Clients book before we speak—the space sells itself.',
               author: 'Marketing Director, Anders Design Group',
@@ -637,8 +637,8 @@ export default function HomePage() {
               month: 'June 2025',
               project: 'Jumeirah Beach Residence Investor Suite for Mr Rahim Kader',
               duration: '15 days',
-              karensPerspective: 'Rahim needed ROI, not just aesthetics. The challenge was creating a luxury look on an investor budget. I focused on strategic upgrades that would photograph beautifully—upcycled pieces that looked bespoke, LED lighting that created ambiance, and a kitchen facelift that would make the listing stand out in crowded rental markets.',
-              whatWasDone: 'Cost-optimized redesign focused on rental yield. Upcycled headboards, custom LED trims, and a small kitchen facelift that photographed like luxury marble.',
+              karensPerspective: 'ROI-focused luxury—strategic upgrades that photograph beautifully and maximize rental yield.',
+              whatWasDone: 'Cost-optimized redesign: upcycled headboards, custom LED trims, and kitchen facelift that photographs like luxury marble.',
               testimonial: 'My Airbnb income rose 40% immediately. The ROI is absurdly good.',
               clientExperience: 'Skeptical at first. Karen showed me the numbers. Investment paid for itself in three months. Booking rate doubled. Premium rates secured.',
               author: 'Rahim Kader',
@@ -648,8 +648,8 @@ export default function HomePage() {
               month: 'July 2025',
               project: 'Downtown Private Office for Apex Holdings',
               duration: '18 days',
-              karensPerspective: 'Apex needed a space that would impress clients and reflect their brand\'s sophistication. I envisioned a boardroom that felt more like a gallery—mirrored ceilings that would expand the space visually, bronze glass that would add warmth, and integrated scent diffusion that would create a memorable first impression.',
-              whatWasDone: 'Boardroom-level fit-out with mirrored ceilings, bronze glass, and integrated scent diffusion. A functional space disguised as a sculpture.',
+              karensPerspective: 'A gallery-like boardroom—mirrored ceilings, bronze glass, and scent diffusion creating memorable impressions.',
+              whatWasDone: 'Boardroom fit-out with mirrored ceilings, bronze glass, and integrated scent diffusion.',
               testimonial: 'Every client meeting ends with "Who designed this place?" That says everything.',
               clientExperience: 'Mirrored ceilings expand space. Bronze glass adds warmth. Scent diffusion creates memories. Every meeting starts with "Who designed this place?"',
               author: 'CEO, Apex Holdings',
@@ -659,8 +659,8 @@ export default function HomePage() {
               month: 'August 2025',
               project: 'Al Khayma Restaurant Rebirth for Chef Firas Habib',
               duration: '26 days',
-              karensPerspective: 'Firas\' restaurant needed a complete identity transformation. The vision was warm, earthy, and Instagram-worthy—terracotta that would bring Mediterranean warmth, arched elements that would create intimacy, and lighting that would make every dish look incredible. The space had to invite people to linger.',
-              whatWasDone: 'Complete interior and brand rebuild: terracotta walls, arched bar counter, artisan mosaic floors. Lighting designed for evening glow and food photography.',
+              karensPerspective: 'Warm, earthy, Instagram-worthy—terracotta walls, arched elements, and lighting that makes every dish look incredible.',
+              whatWasDone: 'Complete interior rebuild: terracotta walls, arched bar counter, artisan mosaic floors. Lighting for evening glow and food photography.',
               testimonial: 'Guests now stay longer, order more, and take photos every night.',
               clientExperience: 'Terracotta walls radiate warmth. Arched bar creates intimacy. Every dish photographs beautifully. Table time increased 40%. Guests stay longer, order more.',
               author: 'Chef Firas Habib',
@@ -670,8 +670,8 @@ export default function HomePage() {
               month: 'September 2025',
               project: 'Al Safa Family Villa for Mr & Mrs Tariq',
               duration: '20 days',
-              karensPerspective: 'The Tariq family wanted a home that felt both refined and welcoming for their children. I envisioned Scandi warmth with gold accents—a master suite that would feel like a retreat, children\'s rooms that would inspire play and rest, and a reading nook that would become a favorite family spot.',
-              whatWasDone: 'Master suite revamp and two children\'s bedrooms re-imagined in Scandi warmth and gold tones. Added built-in wardrobes and a reading nook under the staircase.',
+              karensPerspective: 'Refined yet welcoming—Scandi warmth with gold accents creating a retreat for adults and inspiration for children.',
+              whatWasDone: 'Master suite and children\'s bedrooms in Scandi warmth with gold tones. Built-in wardrobes and reading nook under staircase.',
               testimonial: 'Our home finally feels balanced – elegant yet playful.',
               clientExperience: 'Master suite: our sanctuary. Scandi warmth meets gold accents. Children\'s rooms inspire play and rest. The reading nook under the stairs—our favorite family spot. Elegant yet playful.',
               author: 'Layla Tariq',
@@ -681,8 +681,8 @@ export default function HomePage() {
               month: 'October 2025',
               project: 'DIFC Boutique Office for FinEdge Consulting',
               duration: '14 days',
-              karensPerspective: 'FinEdge needed maximum impact in minimal space. The challenge was making 45 m² feel like a premium consultancy. I focused on strategic mirroring to expand the visual space, dark walnut for sophistication, brushed nickel for modern elegance, and sound treatment that would ensure privacy.',
-              whatWasDone: 'Compact 45 m² workspace with brushed nickel details and dark walnut desk systems. Designed to feel twice its size with strategic mirroring and sound treatment.',
+              karensPerspective: 'Maximum impact in minimal space—strategic mirroring, dark walnut, and brushed nickel creating premium consultancy feel.',
+              whatWasDone: '45 m² workspace with brushed nickel details and dark walnut desk systems. Strategic mirroring makes it feel twice the size.',
               testimonial: 'Clients think we moved to a bigger space – we didn\'t.',
               clientExperience: '45 m² feels like a premium consultancy. Strategic mirroring expands space. Dark walnut adds sophistication. Clients think we moved—we didn\'t.',
               author: 'FinEdge Founder',
@@ -692,8 +692,8 @@ export default function HomePage() {
               month: 'November 2025',
               project: 'Airbnb Collection for Horizon Investments',
               duration: '5 projects / 25 days',
-              karensPerspective: 'Horizon had five properties that weren\'t performing. The strategy was creating a cohesive brand identity across all units while optimizing each for photography. I focused on neutral palettes that would appeal broadly, SPC flooring for durability and luxury feel, and uniform touches that would make the portfolio feel curated.',
-              whatWasDone: 'Rapid makeovers of five underperforming short-term rentals in Business Bay and JVC. Added SPC flooring, neutral palettes, and uniform branding for portfolio cohesion.',
+              karensPerspective: 'Cohesive brand identity across five units—neutral palettes, luxury SPC flooring, and uniform touches for portfolio appeal.',
+              whatWasDone: 'Five property makeovers in Business Bay and JVC. SPC flooring, neutral palettes, and uniform branding for portfolio cohesion.',
               testimonial: 'Booked 100% of December within 48 hours of the photo release.',
               clientExperience: 'Five units transformed in record time. Cohesive brand identity. Neutral palettes, luxury SPC flooring. 100% booked within 48 hours of photo release. Repeat bookings secured.',
               author: 'Horizon Investments Manager',
@@ -703,8 +703,8 @@ export default function HomePage() {
               month: 'December 2025',
               project: 'Top 50 Homes Dubai Submission & Showcase',
               duration: 'Curation phase – 14 days',
-              karensPerspective: 'This was about showcasing our best work and telling the story of transformation. I curated seven projects that represented different aspects of our expertise—from family homes to investment properties, from fast-track makeovers to full transformations. Each had to tell a compelling story.',
-              whatWasDone: 'Selected seven standout projects for award nomination. Filmed behind-the-scenes montage and press interviews for 2025 edition.',
+              karensPerspective: 'Showcasing our best work—seven projects representing different expertise from family homes to investment properties.',
+              whatWasDone: 'Seven standout projects selected for award nomination. Behind-the-scenes montage and press interviews for 2025 edition.',
               testimonial: 'This brand keeps raising the bar – year after year.',
               clientExperience: 'Transforms not just spaces, but lives. Seven projects showcase the full spectrum—family homes, investment properties, fast-track makeovers, complete transformations. Each tells a compelling story. Quality consistently outstanding.',
               author: 'Top 50 Homes Dubai Editorial Team',
@@ -717,7 +717,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
-              className="border-b border-soft-taupe pb-20 md:pb-24 last:border-b-0"
+              className="border-b border-soft-taupe pb-24 md:pb-32 last:border-b-0"
             >
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12">
                 {/* Left Column - Project Info */}
@@ -731,7 +731,7 @@ export default function HomePage() {
                     </span>
                   </div>
                   <div className="mb-4">
-                    <span className="inline-block font-sans text-sm md:text-base tracking-generous uppercase text-gold-very-light font-semibold">
+                    <span className="inline-block font-sans text-sm md:text-base tracking-generous uppercase text-deep-charcoal font-bold">
                       {project.month}
                     </span>
                   </div>
@@ -1013,7 +1013,7 @@ export default function HomePage() {
                     "Karen El Khazen: A Multi-Talented Artist"
                   </p>
                   <p className="font-sans text-sm md:text-base text-muted-charcoal leading-relaxed mb-4">
-                    In-depth profile and design feature showcasing her unique approach to interior transformation.
+                    In-depth profile and design feature showcasing her unique approach to interior transformation, exploring how she blends artistic vision with strategic design principles to create spaces that transcend ordinary living.
                   </p>
                   <a
                     href="https://www.harmoniesmagazine.com/en/architecture-interiors-en/interiors-en/karen-el-khazen-a-multi-talented-artist/"
@@ -1391,45 +1391,75 @@ export default function HomePage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto bg-[#FFF9F0] border-2 border-soft-gold rounded-luxury-lg p-12 md:p-16 text-center space-y-8 md:space-y-12"
+          className="max-w-5xl mx-auto relative"
         >
-          <div className="text-5xl mb-6">🛡️</div>
-          <h3 className="font-sans text-2xl md:text-3xl font-semibold text-deep-charcoal">
-            The Karen K Sanctuaries Guarantee
-          </h3>
+          {/* Elegant background with subtle gradient */}
+          <div className="bg-gradient-to-br from-warm-beige via-off-white to-warm-beige/50 rounded-3xl p-8 md:p-12 lg:p-16 shadow-2xl overflow-hidden relative">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-soft-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-soft-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10 text-center space-y-8 md:space-y-12">
+              {/* Icon with elegant styling */}
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-soft-gold to-gold-dark flex items-center justify-center shadow-xl">
+                  <span className="text-4xl md:text-5xl">🛡️</span>
+                </div>
+              </div>
+              
+              <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-deep-charcoal mb-8 md:mb-12">
+                The Karen K Sanctuaries Guarantee
+              </h3>
 
-          <div className="space-y-8 md:space-y-12 text-left">
-            <div>
-              <h4 className="font-sans text-lg md:text-xl font-semibold text-deep-charcoal mb-3">
-                1. Speed Commitment
-              </h4>
-              <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
-                We deliver within the agreed timeline, or we discount the final invoice proportionally for every week of delay. Your time matters.
-              </p>
-            </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left">
+                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 md:p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-soft-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-soft-gold/20 transition-colors">
+                      <span className="text-xl">⚡</span>
+                    </div>
+                    <h4 className="font-serif text-xl md:text-2xl font-semibold text-deep-charcoal group-hover:text-soft-gold transition-colors">
+                      1. Speed Commitment
+                    </h4>
+                  </div>
+                  <p className="font-sans text-sm md:text-base text-muted-charcoal leading-relaxed">
+                    We deliver within the agreed timeline, or we discount the final invoice proportionally for every week of delay. Your time matters.
+                  </p>
+                </div>
 
-            <div>
-              <h4 className="font-sans text-lg md:text-xl font-semibold text-deep-charcoal mb-3">
-                2. Quality Standard
-              </h4>
-              <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
-                Every material, finish, and installation meets our rigorous quality standards. If something doesn't meet expectations, we make it right — no questions asked.
-              </p>
-            </div>
+                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 md:p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-soft-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-soft-gold/20 transition-colors">
+                      <span className="text-xl">✨</span>
+                    </div>
+                    <h4 className="font-serif text-xl md:text-2xl font-semibold text-deep-charcoal group-hover:text-soft-gold transition-colors">
+                      2. Quality Standard
+                    </h4>
+                  </div>
+                  <p className="font-sans text-sm md:text-base text-muted-charcoal leading-relaxed">
+                    Every material, finish, and installation meets our rigorous quality standards. If something doesn't meet expectations, we make it right — no questions asked.
+                  </p>
+                </div>
 
-            <div>
-              <h4 className="font-sans text-lg md:text-xl font-semibold text-deep-charcoal mb-3">
-                3. ROI Transparency
-              </h4>
-              <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed">
-                For investment-focused clients, we provide clear projections and market comparables. While we can't guarantee market forces, we guarantee our designs maximize your property's competitive position.
+                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 md:p-8 hover:bg-white/80 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-soft-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-soft-gold/20 transition-colors">
+                      <span className="text-xl">🔍</span>
+                    </div>
+                    <h4 className="font-serif text-xl md:text-2xl font-semibold text-deep-charcoal group-hover:text-soft-gold transition-colors">
+                      3. ROI Transparency
+                    </h4>
+                  </div>
+                  <p className="font-sans text-sm md:text-base text-muted-charcoal leading-relaxed">
+                    For investment-focused clients, we provide clear projections and market comparables. While we can't guarantee market forces, we guarantee our designs maximize your property's competitive position.
+                  </p>
+                </div>
+              </div>
+
+              <p className="font-serif text-lg md:text-xl text-deep-charcoal font-semibold italic leading-relaxed pt-6 md:pt-8 mt-8 md:mt-12 border-t border-soft-taupe/30">
+                Your risk is minimal. Your upside is extraordinary.
               </p>
             </div>
           </div>
-
-          <p className="font-sans text-lg md:text-xl text-gold-very-light italic leading-relaxed pt-4">
-            Your risk is minimal. Your upside is extraordinary.
-          </p>
         </motion.div>
       </Section>
     </>

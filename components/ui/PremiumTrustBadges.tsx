@@ -26,11 +26,6 @@ const premiumBadges = [
     text: '5-45 Day Delivery',
     subtext: 'Fast-Track Excellence',
   },
-  {
-    icon: Star,
-    text: '5-Star Rated',
-    subtext: 'Client Satisfaction',
-  },
 ];
 
 const item = {
@@ -45,7 +40,37 @@ interface PremiumTrustBadgesProps {
 export const PremiumTrustBadges: React.FC<PremiumTrustBadgesProps> = ({ onBookClick }) => {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+      {/* Book CTA - Centered at top */}
+      <motion.div
+        variants={item}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: '-50px' }}
+        className="text-center mb-16 md:mb-20"
+      >
+        <div className="max-w-md mx-auto">
+          <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 rounded-full bg-soft-gold flex items-center justify-center transition-transform duration-300 hover:scale-110 shadow-lg">
+            <BookOpen className="w-10 h-10 md:w-12 md:h-12 text-white" />
+          </div>
+          <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-deep-charcoal mb-3 md:mb-4">
+            Ready to Transform?
+          </h3>
+          <p className="font-sans text-base md:text-lg text-muted-charcoal leading-relaxed mb-6 md:mb-8 max-w-xl mx-auto">
+            Your dream sanctuary is just one call away. Let's discuss how we can bring your vision to life.
+          </p>
+          <Button
+            onClick={onBookClick}
+            variant="primary"
+            size="lg"
+            className="w-full md:w-auto"
+          >
+            Book Discovery Call
+          </Button>
+        </div>
+      </motion.div>
+
+      {/* Trust Badges - Below button */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
         {premiumBadges.map((badge, index) => {
           const Icon = badge.icon;
           return (
@@ -57,42 +82,18 @@ export const PremiumTrustBadges: React.FC<PremiumTrustBadgesProps> = ({ onBookCl
               viewport={{ once: true, margin: '-50px' }}
               className="text-center group"
             >
-              <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 rounded-full bg-warm-beige flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-lg">
-                <Icon className="w-10 h-10 md:w-12 md:h-12 text-soft-gold" />
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 md:mb-4 rounded-full bg-warm-beige flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-lg">
+                <Icon className="w-8 h-8 md:w-10 md:h-10 text-soft-gold" />
               </div>
-              <p className="font-serif text-lg md:text-xl lg:text-2xl font-semibold text-deep-charcoal mb-2">
+              <p className="font-serif text-base md:text-lg lg:text-xl font-semibold text-deep-charcoal mb-1 md:mb-2">
                 {badge.text}
               </p>
-              <p className="font-sans text-sm md:text-base text-muted-charcoal">
+              <p className="font-sans text-xs md:text-sm text-muted-charcoal">
                 {badge.subtext}
               </p>
             </motion.div>
           );
         })}
-        
-        {/* Book CTA Badge */}
-        <motion.div
-          variants={item}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: '-50px' }}
-          className="text-center group"
-        >
-          <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-6 rounded-full bg-soft-gold flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-lg">
-            <BookOpen className="w-10 h-10 md:w-12 md:h-12 text-white" />
-          </div>
-          <p className="font-serif text-lg md:text-xl lg:text-2xl font-semibold text-deep-charcoal mb-4 md:mb-6">
-            Ready to Transform?
-          </p>
-          <Button
-            onClick={onBookClick}
-            variant="primary"
-            size="lg"
-            className="w-full md:w-auto"
-          >
-            Book Discovery Call
-          </Button>
-        </motion.div>
       </div>
     </div>
   );
