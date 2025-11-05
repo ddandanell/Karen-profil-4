@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle, ArrowRight, Award, Shield, Sparkles } from 'lucide-react';
 import { Button } from '../ui/Button';
@@ -43,33 +42,16 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="relative z-10 content-width side-padding pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 lg:gap-20 mb-16 md:mb-20">
-          {/* Brand Column - Enhanced */}
-          <div className="lg:col-span-1">
+        {/* Main Footer Content - Stacked in rows */}
+        <div className="space-y-12 md:space-y-16 mb-16 md:mb-20">
+          {/* Brand Row */}
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              {/* Logo */}
-              <Link href="/" className="block mb-6 md:mb-8 group">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative w-32 h-20 md:w-40 md:h-24"
-                >
-                  <Image
-                    src="/images/logo.png"
-                    alt="Karen K Sanctuaries Logo"
-                    fill
-                    className="object-contain filter group-hover:brightness-110 transition-all duration-300"
-                    priority
-                  />
-                </motion.div>
-              </Link>
-              
               <h3 className="font-serif text-3xl md:text-4xl text-deep-charcoal mb-4 md:mb-6">
                 Karen K Sanctuaries
               </h3>
@@ -127,8 +109,10 @@ export const Footer: React.FC = () => {
             </motion.div>
           </div>
 
-          {/* Quick Links - Enhanced */}
-          <div>
+          {/* Quick Links and Contact Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            {/* Quick Links */}
+            <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,10 +136,10 @@ export const Footer: React.FC = () => {
                 ))}
               </ul>
             </motion.div>
-          </div>
+            </div>
 
-          {/* Contact - Enhanced */}
-          <div>
+            {/* Contact */}
+            <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -203,9 +187,10 @@ export const Footer: React.FC = () => {
                 </li>
               </ul>
             </motion.div>
+            </div>
           </div>
 
-          {/* Newsletter - Enhanced */}
+          {/* Newsletter Row */}
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
