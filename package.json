@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "monitor:pet-intent": "node scripts/update-pet-intent-tracker.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -29,4 +30,3 @@
     "eslint-config-next": "^14.2.0"
   }
 }
-
