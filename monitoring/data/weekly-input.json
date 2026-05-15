@@ -1,0 +1,32 @@
+{
+  "weekStart": "2026-05-04",
+  "weekEnd": "2026-05-10",
+  "keywords": [
+    {"term": "dog relocation dubai", "rank": 1, "prevRank": 2, "searchVolume": 1300, "prevSearchVolume": 1180},
+    {"term": "pet transport dubai", "rank": 2, "prevRank": 1, "searchVolume": 1200, "prevSearchVolume": 1240},
+    {"term": "pet relocation uae cost", "rank": 3, "prevRank": 4, "searchVolume": 900, "prevSearchVolume": 760},
+    {"term": "cat relocation dubai", "rank": 4, "prevRank": 3, "searchVolume": 650, "prevSearchVolume": 600},
+    {"term": "pet export permit uae", "rank": 5, "prevRank": 7, "searchVolume": 500, "prevSearchVolume": 430}
+  ],
+  "newContent": {
+    "articles": [
+      {"title": "Dubai pet move checklist", "url": "https://example.com/article-1"}
+    ],
+    "forums": [
+      {"title": "How much did pet relocation cost you in Dubai?", "url": "https://reddit.com/r/dubai/example"}
+    ],
+    "competitorPosts": [
+      {"source": "Sandy Paws", "title": "Updated pet relocation documentation guide", "url": "https://example.com/competitor-post"}
+    ]
+  },
+  "socialPainPoints": [
+    {"painPoint": "Unexpected add-on fees (crate changes, airport handling)", "mentions": 18},
+    {"painPoint": "Confusing permit/document rules", "mentions": 14},
+    {"painPoint": "Long timeline uncertainty during summer embargo windows", "mentions": 11},
+    {"painPoint": "High total price for multi-pet families", "mentions": 10}
+  ],
+  "regionalSignals": [
+    "Higher queries around emergency relocation and temporary fostering.",
+    "Noticeable rise in abandonment-related discussions when travel disruption rumors increase."
+  ]
+}
